@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+input{
+height:35px;
+width:300px;
+posiiton:absolute;
+right:5px;
+top:5px;
+border-radius:3px;
+text-align:center;
+}
+legend{
+font-family:Lato;
+color:white;
+}
+fieldset{
+width:100px;
+}
+.forms{
+position:absolute;
+left:20px;
+top:50px;
+}
+.forma{
+position:absolute;
+left:400px;
+top:50px;
+}
+.formu{
+position:absolute;
+left:800px;
+top:50px;
+}
+.next{
+position:absolute;
+left:1050px;
+top:600px;
+}
+img{
+position:absolute;
+left:30px;
+top:500px;
+
+</style>
+</head>
+<center>
+<body style="background-image: linear-gradient(120deg,#00537E,#3AA17E);">
+<br><br><br><br><br><br>
+<div class="forms">
+<form method="post" action="landing.php">
+<fieldset>
+<legend>Search By Clauses</legend>
+<input type='text' placeholder="Search by Title" name='smovie'>
+<br><input type='text' placeholder="Search by Genre" name='gmovie'>
+<br><input type='text' placeholder="Search by Actor" name='amovie'>
+<br><input type='text' placeholder="Search by Director" name='adirec'>
+<br><input type='submit' value='Lookup'>
+</fieldset>
+</form>
+</div>
+<div class="forma">
+<form method="post" action="add.php">
+<fieldset>
+<legend>Add Clause</legend>
+<input type='text' placeholder="Title" name='tmovie'>
+<br><input type='text' placeholder="Year of Release" name='rmovie'>
+<br><input type='text' placeholder="Director" name='dmovie'>
+<br><input type='text' placeholder="Actors" name='amovie'>
+<br><input type='text' placeholder="Genre" name='gmovie'>
+<br><input type='text' placeholder="Duration" name='dumovie'>
+<br><input type='submit' value='Add'>
+</fieldset>
+</form>
+</div>
+
+<div class="formu">
+<form method="post" action="update.php">
+<fieldset>
+<legend>Update Clause</legend>
+<input type='text' placeholder="Current Title" name='ct'>
+<input type='text' placeholder="Title" name='tmovie'>
+<br><input type='text' placeholder="Year of Release" name='rmovie'>
+<br><input type='text' placeholder="Director" name='dmovie'>
+<br><input type='text' placeholder="Actors" name='amovie'>
+<br><input type='text' placeholder="Genre" name='gmovie'>
+<br><input type='text' placeholder="Duration" name='dumovie'>
+<br><input type='text' placeholder="ImDB URL" name='umovie'>
+<br><input type='submit' value='Update'>
+</fieldset>
+</form>
+</div>
+<div class="next">
+<form action="login.php">
+<input style="width:250px; height:50px; border-radius:30px; font-family:'coolvetica'; font-size:20px;"type='submit' value="Switch to Home View">
+</form>
+</div>
+<img src="lv.png">
+</body>
+</html>

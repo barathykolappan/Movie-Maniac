@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="ini.css">
+</head>
+<script>
+var a=0;
+function validateKey()
+{
+a+=1;
+if(a==1)
+document.getElementById("uname").focus();
+else if(a==2)
+document.getElementById("genre").focus();
+else
+{
+return true;
+}
+return false;
+}
+</script>
+<body style="background-image: linear-gradient(120deg,#00537E,#3AA17E);">
+<img src="newreg.png" style="position:absolute; left:53%;">
+<div class="formm">
+<form method="post" action="login_fresh.php" onsubmit="return validateKey();">
+  <ul class="items"><li class="active"></li><li></li><li></li><li></li></ul>
+  <fieldset class="username enable">
+    <div class="icon left"><i class="material-icons">account_circle</i></div>
+    <input type="text" name="uid" id="uid" placeholder="Preferred User ID">
+	<script>
+	document.getElementById("uid").focus();
+	</script>
+    <div class="icon right button"><i class="arrow"></i></div>	
+  </fieldset>
+    <fieldset class="password">
+    <div class="icon left"><i class="material-icons">face</i></div>
+    <input type="text" id="uname" name="uname" placeholder="Preferred Username">
+    <div class="icon right button"><i class="arrow"></i></div>
+  </fieldset>
+  <fieldset class="genre">
+    <div class="icon left"><i class="material-icons">stars</i></div>
+    <select style="background:none; position:absolute; outline:0px; border:0px; font-size:16px; left:50px; text-align:left; width:250px; height:60px;" name="genre[]" id="genre" multiple>
+	<option value="Action">Action</option>
+	<option value="Adventure">Adventure</option>
+	<option value="Comedy">Comedy</option>
+	<option value="Crime">Crime</option>
+	<option value="Drama">Drama</option>
+	<option value="Horror">Horror</option>
+	<option value="Mystery">Mystery</option>
+	<option value="Psychological">Psychological</option>
+	<option value="Romance">Romance</option>
+	<option value="Thriller">Thriller</option>
+	</select>
+    <div style="visibility:hidden;" class="icon right button"><i class="arrow"></i></div>
+  </fieldset>
+  <fieldset class="thanks">
+    <input type="submit" name="submit" id="sub" value="Let Me In!">
+    <div class="icon right"><i class="arrow"></i></div>
+  </fieldset>
+</form>
+<script type="text/javascript" src="ani.js"></script>
+</div>
+</body></html>
